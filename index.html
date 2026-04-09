@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pomodoro Timer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <section class="card">
+        <p class="eyebrow">Study Session</p>
+        <h1>Pomodoro Timer</h1>
+        <p class="description">
+          Press start for a focused 25-minute round. When time is up, you’ll hear an alarm.
+        </p>
+
+        <div class="timer-shell" aria-live="polite" aria-atomic="true">
+          <p id="status" class="status">Ready to focus</p>
+          <div id="timer" class="timer">25:00</div>
+        </div>
+
+        <div class="controls">
+          <button id="startButton" class="button primary" type="button">Start</button>
+          <button id="resetButton" class="button secondary" type="button">Reset</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
